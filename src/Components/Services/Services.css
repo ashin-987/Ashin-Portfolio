@@ -1,0 +1,21 @@
+#expertise {
+    overflow: hidden;
+}
+#expertise .services__group {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+/* Responsive Code */
+
+@media (max-width:900px) {
+    #expertise .services__group {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:600px) {
+    #expertise .services__group {
+        grid-template-columns: 100%;
+    }
+}
